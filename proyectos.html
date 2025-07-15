@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyectos | Nahym Emilio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos específicos para las imágenes */
+        .project-media {
+            width: 600px;
+            height: 600px;
+            max-width: 100%;
+            max-height: 50vh;
+        }
+        
+        .project-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.5s ease, box-shadow 0.3s ease;
+        }
+
+        .project-media:hover img {
+            transform: scale(1.03);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        /* Estilo para estadísticas en círculos */
+        .project-stats {
+            display: flex;
+            gap: 15px;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 12px 20px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .stat-item i {
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        /* Botones de streaming mejorados */
+        .project-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .stream-btn {
+            padding: 12px 25px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .stream-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .spotify {
+            background: #1DB954;
+            color: white;
+        }
+
+        .spotify:hover {
+            background: #1ed760;
+            box-shadow: 0 8px 20px rgba(29, 185, 84, 0.3);
+        }
+
+        .youtube {
+            background: #FF0000;
+            color: white;
+        }
+
+        .youtube:hover {
+            background: #ff3333;
+            box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra Lateral Simplificada -->
+    <nav class="side-nav glass">
+        <div class="profile-header">
+            <div class="profile-pic-container">
+                <img src="assets/img/foto.JPG" alt="Nahym Emilio" class="profile-pic">
+            </div>
+            <h3>Nahym Emilio Rodríguez Serrato</h3>
+        </div>
+
+        <ul>
+            <li><a href="index.html"><i class="fas fa-user-tie"></i> CV</a></li>
+            <li><a href="biografia.html"><i class="fas fa-book-open"></i> Biografía</a></li>
+            <li><a href="proyectos.html" class="active"><i class="fas fa-music"></i> Proyectos</a></li>
+            <li><a href="miscelanea.html"><i class="fas fa-th"></i> Miscelánea</a></li>
+            <li><a href="foro.html"><i class="fas fa-comments"></i> Foro</a></li>
+            <li><a href="https://www.paypal.com/paypalme/puroscorridotumbado" target="_blank"><i class="fab fa-paypal"></i> Donar</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <header class="header glass">
+            <h1>MIS <span>PROYECTOS</span></h1>
+            <p class="subtitle">Música y tecnología fusionadas</p>
+        </header>
+
+        <!-- Proyecto ALTER VÜ -->
+        <section class="project-card glass">
+            <div class="project-media">
+                <img src="assets/img/proyectos/alter-vu.jpg" alt="ALTER VÜ en vivo">
+            </div>
+            <div class="project-info">
+                <h2>ALTER VÜ</h2>
+                <p class="project-tag">Electronic Rock Experimental</p>
+                <p>Banda pionera en fusionar rock industrial con elementos electrónicos. Actualmente en proceso de grabación de nuestro primer EP conceptual.</p>
+                
+                <div class="project-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span>5 Integrantes</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>15+ Shows</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-compact-disc"></i>
+                        <span>EP en producción</span>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://open.spotify.com/intl-es/artist/6r5bwgify6FXpXA2nXzMP5?si=P1Tn8kpDRFm2xopfdisJ5g" 
+                       class="stream-btn spotify" 
+                       target="_blank">
+                        <i class="fab fa-spotify"></i> Spotify
+                    </a>
+                    <a href="https://www.youtube.com/@AlterVu" 
+                       class="stream-btn youtube" 
+                       target="_blank">
+                        <i class="fab fa-youtube"></i> YouTube
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyecto Solista -->
+        <section class="project-card glass reverse">
+            <div class="project-media">
+                <img src="assets/img/proyectos/solista.jpg" alt="Proyecto Solista">
+            </div>
+            <div class="project-info">
+                <h2>PROYECTO SOLISTA</h2>
+                <p class="project-tag">House Music</p>
+                <p>Producción de tracks enfocados en el groove y la experimentación sonora. Colaboración con productores de Alemania y Holanda.</p>
+                
+                <div class="project-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-globe"></i>
+                        <span>132 Países</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-headphones"></i>
+                        <span>30K+ Oyentes</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-user-friends"></i>
+                        <span>5 Colaboraciones</span>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://open.spotify.com/intl-es/artist/78vUYTf2qz90lXbkyZTtEU?si=de1AUk81RVGa7GluVlJIQQ" 
+                       class="stream-btn spotify" 
+                       target="_blank">
+                        <i class="fab fa-spotify"></i> Spotify
+                    </a>
+                    <a href="https://www.youtube.com/@mlghtmusic" 
+                       class="stream-btn youtube" 
+                       target="_blank">
+                        <i class="fab fa-youtube"></i> YouTube
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyecto Playlist -->
+        <section class="project-card glass">
+            <div class="project-media">
+                <img src="assets/img/proyectos/playlist.jpg" alt="Proyecto Playlist">
+            </div>
+            <div class="project-info">
+                <h2>PROYECTO PLAYLIST</h2>
+                <p class="project-tag">House Music</p>
+                <p>Playlist en la plataforma Spotify con más de 100k guardados en colaboración pagada con artistas de otros países, asegurando un lugar destacado en la lista.</p>
+                
+                <div class="project-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-heart"></i>
+                        <span>100K+ Guardados</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-globe-americas"></i>
+                        <span>+200 Países</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-music"></i>
+                        <span>300+ Artistas</span>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://open.spotify.com/playlist/4MtsHdXI9BXKp5knlILSAO?si=df3e70f53e8541f3" 
+                       class="stream-btn spotify" 
+                       target="_blank">
+                        <i class="fab fa-spotify"></i> Escuchar en Spotify
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

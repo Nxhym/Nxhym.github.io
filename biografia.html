@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Biografía | Nahym Emilio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos específicos para la biografía */
+        .biography-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .life-stage {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 2rem;
+            border-left: 4px solid var(--primary);
+            transition: all 0.3s ease;
+        }
+        
+        .life-stage:hover {
+            transform: translateY(-5px);
+            background: rgba(110, 0, 255, 0.1);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .life-stage h2 {
+            margin-top: 0;
+            color: var(--primary);
+            font-family: var(--font-title);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .life-stage h2 i {
+            font-size: 1.5rem;
+        }
+        
+        .life-stage-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .stage-image {
+            width: 100%;
+            height: 250px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .stage-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .stage-image:hover img {
+            transform: scale(1.05);
+        }
+         .stage-video {
+            width: 100%;
+            height: 250px;
+            border-radius: 0px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        .stage-video video {
+            width: 70%;
+            height: 150%;
+            object-fit: cover;
+        }
+        
+        .video-controls {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0,0,0,0.5);
+            padding: 5px;
+            border-radius: 20px;
+            display: flex;
+            gap: 5px;
+        }
+        
+        .video-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        @media (max-width: 768px) {
+            .life-stage-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .stage-image {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra Lateral -->
+    <nav class="side-nav glass">
+        <div class="profile-header">
+            <div class="profile-pic-container">
+                <img src="assets/img/foto.JPG" alt="Nahym Emilio" class="profile-pic">
+            </div>
+            <h3>Nahym Emilio Rodríguez Serrato</h3>
+        </div>
+
+        <ul>
+            <li><a href="index.html"><i class="fas fa-user-tie"></i> CV</a></li>
+            <li><a href="biografia.html" class="active"><i class="fas fa-book-open"></i> Biografía</a></li>
+            <li><a href="proyectos.html"><i class="fas fa-music"></i> Proyectos</a></li>
+            <li><a href="miscelanea.html"><i class="fas fa-th"></i> Miscelánea</a></li>
+            <li><a href="foro.html"><i class="fas fa-comments"></i> Foro</a></li>
+            <li><a href="https://www.paypal.com/paypalme/puroscorridotumbado" target="_blank"><i class="fab fa-paypal"></i> Donar</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <header class="header glass">
+            <h1>MI <span>BIOGRAFÍA</span></h1>
+            <p class="subtitle">Un viaje a través del tiempo</p>
+        </header>
+
+        <!-- Sección de Biografía -->
+        <section class="biography-section">
+            <!-- Infancia -->
+            <div class="life-stage glass">
+                <h2><i class="fas fa-baby"></i> Infancia (1997-200)</h2>
+                <div class="life-stage-content">
+                    <div class="stage-image">
+                        <img src="assets/img/timeline/infancia.jpg" alt="Infancia de Nahym">
+                    </div>
+                    <div class="stage-text">
+                        <p>Nahym Emilio nació el 17 de Septiembre de 1997 en una familia donde la música y la tecnología siempre estuvieron presentes. Desde muy pequeño mostró un interés inusual por los sonidos y los aparatos electrónicos. A los 5 años ya desarmaba radios viejas para entender cómo funcionaban.</p>
+                        <p>Su infancia estuvo marcada por la curiosidad y la creatividad. Pasaba horas escuchando los discos de sus padres, que incluían desde rock clásico hasta música electrónica experimental. A los 8 años recibió su primer guitarra musical y comenzó a componer pequeñas melodías.</p>
+                        <p>En la escuela primaria, aunque era un niño tranquilo, destacaba por su imaginación y su capacidad para contar historias a través de sonidos y música.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Adolescencia -->
+            <div class="life-stage glass">
+                <h2><i class="fas fa-guitar"></i> Adolescencia (2010-2015)</h2>
+                <div class="life-stage-content">
+                    <div class="stage-image">
+                        <img src="assets/img/timeline/adolecencia.jpg" alt="Adolescencia de Nahym">
+                    </div>
+                    <div class="stage-text">
+                        <p>La adolescencia de Nahym fue un período de exploración musical intensa. Formó su primera banda a los 14 años, donde combinaban rock alternativo con elementos electrónicos. Aprendió a tocar varios instrumentos de manera autodidacta, incluyendo la guitarra, el bajo y la batería.</p>
+                        <p>Durante esta época comenzó a experimentar con software de producción musical, mezclando sonidos analógicos con digitales. Sus compañeros lo describían como "el chico que siempre llevaba auriculares y hablaba de música como si fuera magia".</p>
+                        <p>También desarrolló un interés por la programación durante la preparatoria, creando sus primeras páginas web para compartir sus habilidades como diseñador apenas comenzando. Esta combinación de arte y tecnología marcaría su camino profesional.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Juventud -->
+            <div class="life-stage glass">
+                <h2><i class="fas fa-headphones"></i> Juventud (2015-2021)</h2>
+                <div class="life-stage-content">
+                    <div class="stage-image">
+                        <img src="assets/img/timeline/juventud.png" alt="Juventud de Nahym">
+                    </div>
+                    <div class="stage-text">
+                        <p>En su juventud, Nahym abandonó todas sus metas y sueños ya que la situacion economica familiar tuvo un duro golpe, lo que le restraría sus propositos y metas por lograr.</p>
+                        <p>Dejó sus estudios y comenzó a formar carácter en distintas ramas de la industria alimentaria y restaurantera.</p>
+                        <p>Se dedicó al 100 % en adquirir nuevas habilidades y conocimientos, se enfocó en destacar de el resto de sus compañeros para poder escalar en las empresas y logrando su onjetivo</p>
+                        <p>Convirtiendose en gerente de una sucursal y viajando a Querétaro a capacitar por la apertura d e un nuevo restaurante, fungiendo como supervisor de área y gerente.</p>
+                        <p>Después prefirió experimentar más por su propia cuenta y decidió ingresar como repartidor de comida en aplicaciones moviles para lograr su nuevo reingreso a la universidad.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Adultez -->
+           <div class="life-stage glass">
+                <h2><i class="fas fa-microphone"></i> Adultez (2021-Actualidad)</h2>
+                <div class="life-stage-content">
+                    <div class="stage-video">
+                        <!-- Reemplaza "video.mp4" con la ruta a tu video -->
+                        <video id="bioVideo" poster="assets/img/timeline/cover.png">
+                            <source src="assets/img/timeline/video.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                        <div class="video-controls">
+                            <button class="video-btn" onclick="playPause()">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button class="video-btn" onclick="toggleMute()">
+                                <i class="fas fa-volume-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="stage-text">
+                        <p>En la actualidad, Nahym Emilio ha alcanzado un equilibrio entre su carrera musical y su trabajo en tecnología. Es el líder de la banda ALTER VÜ, donde explora los límites del rock electrónico, mientras mantiene su proyecto solista de house music que sigue creciendo internacionalmente.</p>
+                        <p>Su playlist en Spotify con más de 100k guardados se ha convertido en una plataforma para promover nuevos talentos. Combina su tiempo entre la producción musical, el desarrollo web y la docencia, impartiendo talleres sobre producción musical digital.</p>
+                        <p>Su filosofía actual es clara: "La tecnología es solo una herramienta, la verdadera magia está en la creatividad humana". Sigue experimentando con nuevos sonidos mientras trabaja en su primer álbum conceptual con ALTER VÜ.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Control del video
+        const video = document.getElementById("bioVideo");
+        const playBtn = document.querySelector(".video-btn i.fa-play");
+        const muteBtn = document.querySelector(".video-btn i.fa-volume-up");
+        
+        function playPause() {
+            if (video.paused) {
+                video.play();
+                playBtn.classList.remove("fa-play");
+                playBtn.classList.add("fa-pause");
+            } else {
+                video.pause();
+                playBtn.classList.remove("fa-pause");
+                playBtn.classList.add("fa-play");
+            }
+        }
+        
+        function toggleMute() {
+            video.muted = !video.muted;
+            muteBtn.classList.toggle("fa-volume-up");
+            muteBtn.classList.toggle("fa-volume-mute");
+        }
+        
+        // Autoplay al hacer hover (opcional)
+        const videoContainer = document.querySelector(".stage-video");
+        videoContainer.addEventListener("mouseenter", function() {
+            // video.play();
+        });
+        
+        videoContainer.addEventListener("mouseleave", function() {
+            // video.pause();
+        });
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
